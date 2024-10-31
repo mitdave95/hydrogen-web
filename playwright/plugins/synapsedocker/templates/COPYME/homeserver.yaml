@@ -68,5 +68,5 @@ email:
    client_base_url: "http://localhost/element"
 
 trusted_key_servers:
-  - server_name: "matrix.org"
+  - server_name: "http://localhost:8008"
 suppress_key_server_warning: true

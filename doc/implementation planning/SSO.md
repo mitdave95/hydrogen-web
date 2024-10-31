@@ -2,7 +2,7 @@ Pseudo code of how SSO should work:
 
 ```js
 // 1. Starting SSO
-const loginOptions = await sessionContainer.queryLogin("matrix.org");
+const loginOptions = await sessionContainer.queryLogin("http://localhost:8008");
 // every login option (the return type of loginOptions.password and loginOptions.sso.createLogin)
 // that can be passed in to startWithLogin will implement a common LoginMethod interface that has:
 // - a `homeserver` property (so the hsApi can be created for it before passing it into `login`)

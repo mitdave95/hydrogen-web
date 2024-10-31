@@ -80,5 +80,5 @@ server_notices:
   system_mxid_avatar_url: "mxc://localhost:5005/oumMVlgDnLYFaPVkExemNVVZ"
   room_name: "Server Notices"
 trusted_key_servers:
-  - server_name: "matrix.org"
+  - server_name: "http://localhost:8008"
 suppress_key_server_warning: true

@@ -84,7 +84,7 @@ async function main() {
     urlRouter.attach();
     const client = new Client(platform);
 
-    const loginOptions = await client.queryLogin("matrix.org").result;
+    const loginOptions = await client.queryLogin("http://localhost:8008").result;
     client.startWithLogin(loginOptions.password("username", "password"));
 
     await client.loadStatus.waitFor((status: string) => {

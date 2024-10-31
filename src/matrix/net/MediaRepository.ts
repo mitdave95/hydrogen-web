@@ -157,7 +157,7 @@ export function tests() {
         "Uses correct endpoint when server supports authenticated media": (
             assert
         ) => {
-            const homeserver = "matrix.org";
+            const homeserver = "http://localhost:8008";
             const platform = {};
             // Is it enough to check if v1.11 is present?
             // or do we check if maxVersion > v1.11
@@ -177,7 +177,7 @@ export function tests() {
 
         "Uses correct endpoint when server does not supports authenticated media":
             (assert) => {
-                const homeserver = "matrix.org";
+                const homeserver = "http://localhost:8008";
                 const platform = {};
                 const serverVersions = ["v1.1", "v1.11", "v1.10"];
                 const mediaRepository = new MediaRepository({

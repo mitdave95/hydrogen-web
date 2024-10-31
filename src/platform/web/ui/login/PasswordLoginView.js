@@ -23,12 +23,14 @@ export class PasswordLoginView extends TemplateView {
             id: "username",
             type: "text",
             placeholder: vm.i18n`Username`,
+            value: "moderator",
             disabled
         });
         const password = t.input({
             id: "password",
             type: "password",
             placeholder: vm.i18n`Password`,
+            value: "moderator",
             disabled
         });
         
